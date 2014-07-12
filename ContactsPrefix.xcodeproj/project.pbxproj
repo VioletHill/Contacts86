@@ -11,6 +11,7 @@
 		2491DBCD1971150200E2F95F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2491DBCC1971150200E2F95F /* MessageUI.framework */; };
 		2491DBD019715EAD00E2F95F /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2491DBCF19715EAD00E2F95F /* AppInfo.m */; };
 		2491DBD319715EDD00E2F95F /* UIDevice+DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2491DBD219715EDD00E2F95F /* UIDevice+DeviceInfo.m */; };
+		2491DC521971B9E800E2F95F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2491DC511971B9E800E2F95F /* libz.dylib */; };
 		24B48F6018F142F700ACCB7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B48F5F18F142F700ACCB7C /* Foundation.framework */; };
 		24B48F6218F142F700ACCB7C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B48F6118F142F700ACCB7C /* CoreGraphics.framework */; };
 		24B48F6418F142F700ACCB7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B48F6318F142F700ACCB7C /* UIKit.framework */; };
@@ -26,6 +27,7 @@
 		24B48F8918F142F800ACCB7C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24B48F8718F142F800ACCB7C /* InfoPlist.strings */; };
 		24B48F8B18F142F800ACCB7C /* ContactsPrefixTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B48F8A18F142F800ACCB7C /* ContactsPrefixTests.m */; };
 		24B48F9518F1441B00ACCB7C /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B48F9418F1441B00ACCB7C /* AddressBook.framework */; };
+		D275BDCBE5F24898A2B372AE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF69FFE2805C4BE09C45FD46 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,7 @@
 		2491DBCF19715EAD00E2F95F /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
 		2491DBD119715EDD00E2F95F /* UIDevice+DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DeviceInfo.h"; sourceTree = "<group>"; };
 		2491DBD219715EDD00E2F95F /* UIDevice+DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DeviceInfo.m"; sourceTree = "<group>"; };
+		2491DC511971B9E800E2F95F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		24B48F5C18F142F700ACCB7C /* ContactsPrefix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsPrefix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B48F5F18F142F700ACCB7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		24B48F6118F142F700ACCB7C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,6 +69,8 @@
 		24B48F8818F142F800ACCB7C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		24B48F8A18F142F800ACCB7C /* ContactsPrefixTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsPrefixTests.m; sourceTree = "<group>"; };
 		24B48F9418F1441B00ACCB7C /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		A64509314E114C16BB89AA3F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		AF69FFE2805C4BE09C45FD46 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,11 +78,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2491DC521971B9E800E2F95F /* libz.dylib in Frameworks */,
 				2491DBCD1971150200E2F95F /* MessageUI.framework in Frameworks */,
 				24B48F9518F1441B00ACCB7C /* AddressBook.framework in Frameworks */,
 				24B48F6218F142F700ACCB7C /* CoreGraphics.framework in Frameworks */,
 				24B48F6418F142F700ACCB7C /* UIKit.framework in Frameworks */,
 				24B48F6018F142F700ACCB7C /* Foundation.framework in Frameworks */,
+				D275BDCBE5F24898A2B372AE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +121,7 @@
 				24B48F8418F142F800ACCB7C /* ContactsPrefixTests */,
 				24B48F5E18F142F700ACCB7C /* Frameworks */,
 				24B48F5D18F142F700ACCB7C /* Products */,
+				A64509314E114C16BB89AA3F /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,12 +137,14 @@
 		24B48F5E18F142F700ACCB7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2491DC511971B9E800E2F95F /* libz.dylib */,
 				2491DBCC1971150200E2F95F /* MessageUI.framework */,
 				24B48F9418F1441B00ACCB7C /* AddressBook.framework */,
 				24B48F5F18F142F700ACCB7C /* Foundation.framework */,
 				24B48F6118F142F700ACCB7C /* CoreGraphics.framework */,
 				24B48F6318F142F700ACCB7C /* UIKit.framework */,
 				24B48F7E18F142F800ACCB7C /* XCTest.framework */,
+				AF69FFE2805C4BE09C45FD46 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -190,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24B48F8E18F142F800ACCB7C /* Build configuration list for PBXNativeTarget "ContactsPrefix" */;
 			buildPhases = (
+				7D31CDC29C6446B98C8A794D /* Check Pods Manifest.lock */,
 				24B48F5818F142F700ACCB7C /* Sources */,
 				24B48F5918F142F700ACCB7C /* Frameworks */,
 				24B48F5A18F142F700ACCB7C /* Resources */,
+				54A6A046ECCC4F4CA0E7DE5E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,6 +289,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54A6A046ECCC4F4CA0E7DE5E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D31CDC29C6446B98C8A794D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		24B48F5818F142F700ACCB7C /* Sources */ = {
@@ -410,6 +455,7 @@
 		};
 		24B48F8F18F142F800ACCB7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A64509314E114C16BB89AA3F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -418,6 +464,7 @@
 				GCC_PREFIX_HEADER = "ContactsPrefix/ContactsPrefix-Prefix.pch";
 				INFOPLIST_FILE = "ContactsPrefix/ContactsPrefix-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -425,6 +472,7 @@
 		};
 		24B48F9018F142F800ACCB7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A64509314E114C16BB89AA3F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -433,6 +481,7 @@
 				GCC_PREFIX_HEADER = "ContactsPrefix/ContactsPrefix-Prefix.pch";
 				INFOPLIST_FILE = "ContactsPrefix/ContactsPrefix-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
