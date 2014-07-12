@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2491DBCB197114D600E2F95F /* AboutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2491DBCA197114D600E2F95F /* AboutTableViewController.m */; };
+		2491DBCD1971150200E2F95F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2491DBCC1971150200E2F95F /* MessageUI.framework */; };
+		2491DBD019715EAD00E2F95F /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2491DBCF19715EAD00E2F95F /* AppInfo.m */; };
+		2491DBD319715EDD00E2F95F /* UIDevice+DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2491DBD219715EDD00E2F95F /* UIDevice+DeviceInfo.m */; };
 		24B48F6018F142F700ACCB7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B48F5F18F142F700ACCB7C /* Foundation.framework */; };
 		24B48F6218F142F700ACCB7C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B48F6118F142F700ACCB7C /* CoreGraphics.framework */; };
 		24B48F6418F142F700ACCB7C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B48F6318F142F700ACCB7C /* UIKit.framework */; };
@@ -35,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2491DBC9197114D600E2F95F /* AboutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutTableViewController.h; sourceTree = "<group>"; };
+		2491DBCA197114D600E2F95F /* AboutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutTableViewController.m; sourceTree = "<group>"; };
+		2491DBCC1971150200E2F95F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		2491DBCE19715EAD00E2F95F /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
+		2491DBCF19715EAD00E2F95F /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
+		2491DBD119715EDD00E2F95F /* UIDevice+DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DeviceInfo.h"; sourceTree = "<group>"; };
+		2491DBD219715EDD00E2F95F /* UIDevice+DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DeviceInfo.m"; sourceTree = "<group>"; };
 		24B48F5C18F142F700ACCB7C /* ContactsPrefix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsPrefix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B48F5F18F142F700ACCB7C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		24B48F6118F142F700ACCB7C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2491DBCD1971150200E2F95F /* MessageUI.framework in Frameworks */,
 				24B48F9518F1441B00ACCB7C /* AddressBook.framework in Frameworks */,
 				24B48F6218F142F700ACCB7C /* CoreGraphics.framework in Frameworks */,
 				24B48F6418F142F700ACCB7C /* UIKit.framework in Frameworks */,
@@ -82,6 +94,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2491DBC81971132500E2F95F /* about */ = {
+			isa = PBXGroup;
+			children = (
+				2491DBD119715EDD00E2F95F /* UIDevice+DeviceInfo.h */,
+				2491DBD219715EDD00E2F95F /* UIDevice+DeviceInfo.m */,
+				2491DBCE19715EAD00E2F95F /* AppInfo.h */,
+				2491DBCF19715EAD00E2F95F /* AppInfo.m */,
+				2491DBC9197114D600E2F95F /* AboutTableViewController.h */,
+				2491DBCA197114D600E2F95F /* AboutTableViewController.m */,
+			);
+			name = about;
+			sourceTree = "<group>";
+		};
 		24B48F5318F142F700ACCB7C = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +129,7 @@
 		24B48F5E18F142F700ACCB7C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2491DBCC1971150200E2F95F /* MessageUI.framework */,
 				24B48F9418F1441B00ACCB7C /* AddressBook.framework */,
 				24B48F5F18F142F700ACCB7C /* Foundation.framework */,
 				24B48F6118F142F700ACCB7C /* CoreGraphics.framework */,
@@ -116,6 +142,7 @@
 		24B48F6518F142F700ACCB7C /* ContactsPrefix */ = {
 			isa = PBXGroup;
 			children = (
+				2491DBC81971132500E2F95F /* about */,
 				24B48F6E18F142F700ACCB7C /* AppDelegate.h */,
 				24B48F6F18F142F700ACCB7C /* AppDelegate.m */,
 				24B48F7118F142F700ACCB7C /* Main.storyboard */,
@@ -203,6 +230,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = TongjiUniversity;
 				TargetAttributes = {
+					24B48F5B18F142F700ACCB7C = {
+						DevelopmentTeam = L7389V69LB;
+					};
 					24B48F7C18F142F800ACCB7C = {
 						TestTargetID = 24B48F5B18F142F700ACCB7C;
 					};
@@ -253,9 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2491DBD019715EAD00E2F95F /* AppInfo.m in Sources */,
 				24B48F7618F142F700ACCB7C /* ViewController.m in Sources */,
 				24B48F7018F142F700ACCB7C /* AppDelegate.m in Sources */,
 				24B48F6C18F142F700ACCB7C /* main.m in Sources */,
+				2491DBCB197114D600E2F95F /* AboutTableViewController.m in Sources */,
+				2491DBD319715EDD00E2F95F /* UIDevice+DeviceInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,9 +413,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ContactsPrefix/ContactsPrefix-Prefix.pch";
 				INFOPLIST_FILE = "ContactsPrefix/ContactsPrefix-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,9 +428,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ContactsPrefix/ContactsPrefix-Prefix.pch";
 				INFOPLIST_FILE = "ContactsPrefix/ContactsPrefix-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -460,6 +497,7 @@
 				24B48F9018F142F800ACCB7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24B48F9118F142F800ACCB7C /* Build configuration list for PBXNativeTarget "ContactsPrefixTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +506,7 @@
 				24B48F9318F142F800ACCB7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
