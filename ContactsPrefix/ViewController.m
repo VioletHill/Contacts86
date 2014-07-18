@@ -108,7 +108,7 @@
             NSString* value = (__bridge NSString*)(ABMultiValueCopyValueAtIndex(phoneNumbers, j));
             if (isAdd) {
                 if (!([[value substringToIndex:prefix.length] isEqualToString:prefix]) && [value characterAtIndex:0] == '1') {
-                    value = [NSString stringWithFormat:@"+86%@", value];
+                    value = [NSString stringWithFormat:@"%@%@", prefix, value];
                 }
             } else {
                 NSLog(@"%@", [value substringToIndex:prefix.length]);
@@ -130,12 +130,18 @@
 {
     isAdd = NO;
     NSMutableString* str = [self.prefixDeleteLabel.text mutableCopy];
+    if (str.length > 5) {
+        [[[UIAlertView alloc] initWithTitle:@"输入错误" message:@"亲～～要对自己的通讯录负责哦～～" delegate:nil cancelButtonTitle:@"我错了T_T" otherButtonTitles:nil, nil] show];
+        [self endFix];
+        return;
+    }
     for (int i = 0; i < str.length; i++) {
         if ([str characterAtIndex:i] < '0' || [str characterAtIndex:i] > '9') {
             [str deleteCharactersInRange:NSMakeRange(i, 1)];
             i--;
         }
     }
+
     prefix = [NSString stringWithFormat:@"+%@", str];
     [self readAllPeople];
     [self endFix];
@@ -151,6 +157,11 @@
 {
     isAdd = YES;
     NSMutableString* str = [self.prefixLabel.text mutableCopy];
+    if (str.length > 5) {
+        [[[UIAlertView alloc] initWithTitle:@"输入错误" message:@"亲～～要对自己的通讯录负责哦～～" delegate:nil cancelButtonTitle:@"我错了T_T" otherButtonTitles:nil, nil] show];
+        [self endFix];
+        return;
+    }
     for (int i = 0; i < str.length; i++) {
         if ([str characterAtIndex:i] < '0' || [str characterAtIndex:i] > '9') {
             [str deleteCharactersInRange:NSMakeRange(i, 1)];
